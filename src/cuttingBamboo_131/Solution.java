@@ -72,7 +72,7 @@ public class Solution {
             return (int)Math.pow(3, a);
         }
     }
-    }
+
 
 
 }
