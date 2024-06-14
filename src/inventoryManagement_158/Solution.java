@@ -1,4 +1,4 @@
-package inventoryManagement;
+package inventoryManagement_158;
 
 /**
  * LCR 158. 库存管理 II
