@@ -193,7 +193,7 @@ public class Solution {
                 isDot = true; // 第一次遇到小数点后就置为true，之后就一直为true，以便再遇到重复小数点时判断
             } else if (str[i] == 'e' || str[i] == 'E') { // 遇到‘e’或'E'
                 if (!isNum || ise_or_E) {
-                    return false; // ‘e’或'E'前面必须有整数，且前面不能重复出现‘e’或'E'
+                    return false; // ‘e’或'E'前面必须有数字，且前面不能重复出现‘e’或'E'
                 }
                 ise_or_E = true; // 第一次遇到E或e后就置为true，之后就一直为true，以便再遇到重复的E或e时判断
                 isNum = false; // 重置isNum，因为‘e’或'E'之后也必须接上整数，防止出现 123e或者123e+的非法情况
