@@ -1,4 +1,4 @@
-package trainingPlan;
+package trainingPlan_139;
 
 /**
  * LCR 139. 训练计划 I
