@@ -24,7 +24,7 @@ import java.util.Queue;
  */
 public class Checkout {
 
-    private Queue<Integer> queue;
+    private Queue<Integer> queue;   // 普通队列，用于存放所有数据，实现正常的出队、入队操作
     private Deque<Integer> decrQ;   // 非严格单调减 队列（确保队首元素为queue中的最大值）
 
     public Checkout() {
