@@ -44,7 +44,7 @@ public class Solution {
         }
 
         while(b > 0) {
-            // 如果b是奇数则结果还需要乘上x
+            // 每当 b 为奇数时，将多出的一项 x 乘入 res
             if ((b & 1) == 1) {
                 res *= x;
             }
