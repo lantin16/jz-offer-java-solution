@@ -33,11 +33,11 @@ public class Solution {
             high = num / d / 10;
             tmp /= 10;
 
-            if (cur == 0) {
+            if (cur == 0) { // n的当前位为0则要想该位为1则high必须小于n的high，此时low任取
                 res += high * d;
-            } else if (cur == 1) {
+            } else if (cur == 1) {  // n的当前位为1则要想该位为1则high小于n的high时low可以任取，当high等于n的high时low也不能超过n的low
                 res += high * d + low + 1;
-            } else {    // cur > 1
+            } else {    // cur > 1，n的当前位大于1则要想该位为1则high小于等于n的high均可，此时low任取
                 res += (high + 1) * d;
             }
             d *= 10;
